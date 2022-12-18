@@ -2,7 +2,7 @@ use std::collections::HashSet;
 use std::fs;
 
 fn main() {
-    let mut res = fs::read_to_string("input.txt").unwrap();
+    let mut res = fs::read_to_string("src/input/input_3.txt").unwrap();
     res.retain(|c| c != '\r');
 
     let prio: i32 = res

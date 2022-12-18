@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let mut res = fs::read_to_string("input.txt").unwrap();
+    let mut res = fs::read_to_string("src/input/input_1.txt").unwrap();
     res.retain(|c| c != '\r');
 
     let mut all_cals: Vec<i32> = res
